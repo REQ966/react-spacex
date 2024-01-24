@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+    width: 100%;
+    scroll-snap-align: start;
+    font-size: 11px;
+    box-sizing: border-box;
+    
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: grey;
+}

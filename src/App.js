@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header"
+import Item from "./components/Item"
+import Axiom from "./assets/Axiom3.jpg"
+import Starlink from "./assets/starlink.jpg"
+import Starlink2 from "./assets/starlinkk.jpg"
+import Flight from "./assets/flight.jpg"
+import logo from "./assets/logo.png"
+import menu from "./assets/menu.png"
+import Footer from "./components/Footer";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <Header logo={logo} menu={menu} />
       </header>
+      <div className='item-container'>
+          <Item img={Axiom} time="CURRENT MISSION" button="REWATCH" mission="AX-3 MISSION"/>
+          <Item img={Starlink} time="UPCOMING LAUNCH" button="WATCH" mission="STARLINK MISSION"/>
+          <Item img={Starlink2} time="RECENT LAUNCH" button="REWATCH" mission="STARLINK MISSION"/>
+          <Item img={Flight} time="RECENT LAUNCH" button="LEARN MORE" mission="STARSHIP'S SECOND FLIGHT TEST"/>
+          <Footer />
+        </div>
+    
     </div>
   );
 }
