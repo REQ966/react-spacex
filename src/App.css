@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
 .item-container{
     height: 100vh;
   overflow: auto;
@@ -9,7 +13,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #000;
-    font: 16px/26px D-DIN-Regular,Arial,Verdana,sans-serif;
+    font: 16px/26px Oswald,Arial,Verdana,sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: left;
